@@ -44,14 +44,14 @@ svm_model = joblib.load("models/svm_model_count.pkl")
 
 
 #mysql config
-app.config['SECRET_KEY'] = 'wg4evfdg54ervge45grbtyhtr4'
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'Avani@123'
-app.config['MYSQL_DB'] = 'senti_db'
+app.config['SECRET_KEY'] = 'your secrect key'
+app.config['MYSQL_HOST'] = 'MYSQL_HOST'
+app.config['MYSQL_USER'] = 'MYSQL_USER'
+app.config['MYSQL_PASSWORD'] = 'MYSQL_PASSWORD'
+app.config['MYSQL_DB'] = 'MYSQL_DB'
 
 #jwt config
-app.config['JWT_SECRET_KEY'] = '8gyufbiejwk09jio3nfeh'
+app.config['JWT_SECRET_KEY'] = 'JWT_SECRET_KEY''
 #specifing  where the JWTs will be expected & jwt stored in cookies
 app.config['JWT_TOKEN_LOCATION'] = ['cookies']
 #paths to the access and refresh JWT cookies availbilty.  ()'/') - cookies will be accessible across all routes and paths.
